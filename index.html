@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./index.css">
+<title>Tip calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <p class="split">SPLI</p>
+            <p class="tter">TTER</p>
+        </div>
+        <div class="card">
+            <section class="inputs-container">
+                <p class="input-label">Bill</p>
+                <input type="text" name="bill" class=" txt-input bill">
+                <p class="input-label">Select Tip %</p>
+                    <div class="select-tip">
+                    <div class="tip">5%</div>
+                    <div class="tip">10%</div>
+                    <div class="tip">15%</div>
+                    <div class="tip">25%</div>
+                    <div class="tip">50%</div>
+                    <input type="text" class="custom-tip" placeholder="Custom"> 
+                </div>
+                <div class="labels-container">
+                    <p class="input-label">Number of People</p>
+                    <p class="not-zero">can't be zero</p>
+                </div>
+                    <input type="text" class=" txt-input no-people">
+            </section>
+
+        <section class="review-container">
+            <div class="preview-card">
+                <div class="preview-info-container">
+                    <div class="preview-info">
+                        <p class="preview-text">Tip Amount <span class="person">/ person</span></p>
+                        <p class="price " id="tip-amount">$0.00</p>
+                    </div>
+                    <div class="preview-info">
+                        <p class="preview-text">Total <span class="person">/ person</span></p>
+                        <p class="price" id="total">$0.00</span>
+                    </div>
+                    </div>    
+                    <div class="reset-btn">RESET</div>
+            </div>
+        </section>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
